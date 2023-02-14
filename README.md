@@ -1,5 +1,5 @@
 # Momentum
-:point_right:아이템을 추가, 제거하고 상태별로 확인할 수 있는 앱
+:point_right:로그인, 날짜, 시간, 명언 랜덤 배정, 화면 랜덤 배정, todo리스트 작성하고 localStorage에 저장, 삭제 기능 구현
 
 ![todoList](./img/momentum-img.PNG)
 :clapper: 데모앱:
