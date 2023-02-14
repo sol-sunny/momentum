@@ -1,4 +1,4 @@
-const images = ["1.jpg", "2.jpg", "3.jpg"];
+const images = ["2.jpg", "3.jpg"];
 //새로고침하면 이미지 랜덤
 const todaysImages = images[Math.floor(Math.random() * images.length)];
 //랜덤으로 이미지을 하나씩 뽑아서 화면에 출력해준다.

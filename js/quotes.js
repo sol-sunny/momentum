@@ -41,8 +41,8 @@ const quotes = [
     },
 ];
 
-const quote = document.querySelector("#quote span:first-child");
-const author = document.querySelector("#quote span:last-child");
+const quote = document.querySelector("#quote div:first-child");
+const author = document.querySelector("#quote div:last-child");
 
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 //랜덤으로 명언을 하나씩 뽑아줌.
@@ -50,4 +50,4 @@ const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 //quotes 어레이에서 math.floor은 랜덤으로 뽑은 번호의 소수점을 모두 버려준다. 
 
 quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;
+author.innerText = `- ${todaysQuote.author} -`;

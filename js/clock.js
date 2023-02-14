@@ -1,12 +1,17 @@
-const clock = document.querySelector("h2#clock");
+const clock = document.querySelector("div#clock");
+const calendar = document.querySelector("div#calendar");
 
 function getClock() {
     const date = new Date();
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, "0");
+    const day = String(date.getDate()).padStart(2, "0");
     const hours = String(date.getHours()).padStart(2, "0");
     const minutes = String(date.getMinutes()).padStart(2, "0");
     const seconds = String(date.getSeconds()).padStart(2, "0");
     //clock.innerText = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;  
-    clock.innerText = `${hours}:${minutes}:${seconds}`;
+    calendar.innerText = `${year} - ${month} - ${day}`;
+    clock.innerText = `${hours} : ${minutes} : ${seconds}`;
     //만약 1이 아니라 00 아니면 01초, 01분, 01시라고 쓰고 싶다면 시간 분 초를 스트링(String으로 묶어줌)으로 만들고 
     //padStart/ 혹은 padEnd를 사용해 두개의 글자가 나와야하는데 그보다 적은 글자가 나온다면 앞이나 뒤에 0을 2개의 글자로 채워질만큼 붙인라는 코드를 사용해야한다.
 }

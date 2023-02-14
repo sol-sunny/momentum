@@ -19,7 +19,7 @@ function onLoginSubmit(event) {
 }
 
 function paintGreetings(username) {         //여기서 (username)은 onLoginSubmit함수에서 보내준 username을 매개변수(매개변수는 어떤 이름으로 해도 상관없다.)로 받았기 때문에 따로 함수안에 username을 다시 선언할 필요가 없다.           //4번
-    greeting.innerText = `Hello ${username}`;
+    greeting.innerText = `:) Welcome ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);   //greeting태그에 부여한 hidden클래스를 지우면서 css가 적용되지 않도록 해서 화면에 나타나도록 해준다.
 }
 // step5. 비어있는 h1 요소안에 `Hello username` 이라는 텍스트 추가

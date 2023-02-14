@@ -28,7 +28,7 @@ function paintToDo(newTodo) {      //paintToDo(newToDoObj); 라는 코드는 pai
     span.innerText = newTodo.text;                      //input에 적은 value를 저장한 newToDo를 span칸 안에 저장한다.
     const button = document.createElement("button");    //html안에 button태그 생성
     li.appendChild(button);                             //button을 li태그 안에 집어 넣는다.
-    button.innerText = "❌"
+    button.innerText = "❌";
     button.addEventListener("click", deleteToDo);
     toDoList.appendChild(li);                         //li(span/button태그를 품은)태그를 toDoList<ul> html공간에 저장한다.
 }
