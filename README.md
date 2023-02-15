@@ -9,7 +9,7 @@
 + 현재 날짜, 시간을 알려준다.
 + 새로고침하면 '오늘의 명언'을 랜덤으로 하나씩 화면에 출력한다.
 + 현재 내가 위치한 지역의 날씨를 알려준다.
-+ TODOLIST의 input에 입력한 값을 localStorage에 저장했기 때문에 새로고침해도 값이 유지되며 
++ TODOLIST의 input에 입력한 값을 localStorage에 저장했기 때문에 새로고침해도 값이 유지된다.
 + TODOLIST의 삭제 표시를 누르면 화면과 localStorage에서도 사라진다.
 
 ## :hammer:사용한 기술
